@@ -30,3 +30,11 @@ make scripts
 https://github.com/lwfinger/rtl8188eu
 git checkout -b v5.2.2.4 origin/v5.2.2.4
 make && make install
+
+orange pi
+https://github.com/hyphop/miZy
+
+https://dietpi.com/
+https://archlinuxarm.org/
+https://www.armbian.com/
+https://openwrt.org
