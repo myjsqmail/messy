@@ -38,3 +38,6 @@ https://dietpi.com/
 https://archlinuxarm.org/
 https://www.armbian.com/
 https://openwrt.org
+
+hostapd
+git clone git://w1.fi/srv/git/hostap.git
