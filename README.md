@@ -41,3 +41,6 @@ https://openwrt.org
 
 hostapd
 git clone git://w1.fi/srv/git/hostap.git
+
+eap_reauth_period
+wpa_group_rekey
