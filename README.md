@@ -41,6 +41,7 @@ https://openwrt.org
 
 hostapd
 git clone git://w1.fi/srv/git/hostap.git
+git clone https://chromium.googlesource.com/chromiumos/third_party/hostap
 
 eap_reauth_period
 wpa_group_rekey
