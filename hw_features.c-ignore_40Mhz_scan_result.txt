@@ -1,0 +1,36 @@
+static void ieee80211n_check_scan(struct hostapd_iface *iface)
+{
+        struct wpa_scan_results *scan_res;
+        int oper40;
+        int res;
+
+        /* Check list of neighboring BSSes (from scan) to see whether 40 MHz is
+         * allowed per IEEE Std 802.11-2012, 10.15.3.2 */
+
+        iface->scan_cb = NULL;
+
+        scan_res = hostapd_driver_get_scan_results(iface->bss[0]);
+        if (scan_res == NULL) {
+                hostapd_setup_interface_complete(iface, 1);
+                return;
+        }
+
+        if (iface->current_mode->mode == HOSTAPD_MODE_IEEE80211A)
+                oper40 = ieee80211n_check_40mhz_5g(iface, scan_res);
+        else
+                oper40 = ieee80211n_check_40mhz_2g4(iface, scan_res);
+        wpa_scan_results_free(scan_res);
+
+        oper40 = 1;
+        if (!oper40) {
+                wpa_printf(MSG_INFO, "20/40 MHz operation not permitted on "
+                           "channel pri=%d sec=%d based on overlapping BSSes",
+                           iface->conf->channel,
+                           iface->conf->channel +
+                           iface->conf->secondary_channel * 4);
+                iface->conf->secondary_channel = 0;
+        }
+
+        res = ieee80211n_allowed_ht40_channel_pair(iface);
+        hostapd_setup_interface_complete(iface, !res);
+}
