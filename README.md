@@ -1,7 +1,6 @@
-Contact Me
 ```
-Telegram：
-@myjsqmail
+Contact Me
+Telegram：@myjsqmail
 ```
 
 v2ray
