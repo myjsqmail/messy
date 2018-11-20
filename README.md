@@ -78,7 +78,8 @@ make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnu- KSRC=../linux
 ```
 git clone https://github.com/jwrdegoede/rtl8189ES_linux.git
 cd rtl8189ES_linux.git
-make -C /lib/modules/4.14.78-sunxi64/build M=/root/rtl8189ES_linux.etv  modules
+make -j4 ARCH=arm64 KSRC=/lib/modules/4.14.78-sunxi64/build
+#make -C /lib/modules/4.14.78-sunxi64/build M=/root/rtl8189ES_linux.etv  modules
 ```
 
 
