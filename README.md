@@ -82,4 +82,5 @@ make -j4 ARCH=arm64 KSRC=/lib/modules/4.14.78-sunxi64/build
 #make -C /lib/modules/4.14.78-sunxi64/build M=/root/rtl8189ES_linux.etv  modules
 ```
 
-
+Realtek Drivers
+git clone https://gitlab.com/ember-dev/EmbER-Amlogic-Realtek-Drivers.git
