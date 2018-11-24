@@ -86,3 +86,16 @@ Realtek Drivers
 ```
 git clone https://gitlab.com/ember-dev/EmbER-Amlogic-Realtek-Drivers.git
 ```
+
+openwrt openssl
+```
+./libcrypto.so: warning: gethostbyname is obsolescent, use getnameinfo() instead.
+./libcrypto.so: undefined reference to `getcontext'
+./libcrypto.so: undefined reference to `setcontext'
+./libcrypto.so: undefined reference to `makecontext'
+./Configure linux-aarch64 --prefix=/root/tmp/openssl --openssldir=/root/tmp/openssl no-shared no-async
+is need no-asm? i don't know.
+是mipsel-linux没有提供GNU C的ucontext库
+config 配置时添加 no-async
+修改Makefile ,若有-m32或-m64 字段，直接删除
+```
