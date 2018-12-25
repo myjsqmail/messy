@@ -100,12 +100,12 @@ config 配置时添加 no-async
 修改Makefile ,若有-m32或-m64 字段，直接删除
 ```
 
-RTL8821CU_driver_v5.4.1
+RTL8811CU & RTL8821CU_driver_v5.4.1
 ```
 https://github.com/axiomware/RTL8821CU_driver_v5.4.1
 ```
 
-RTL8821CU_driver_v5.2.15.3
+RTL8811CU & RTL8821CU_driver_v5.2.15.3
 ```
 https://github.com/axiomware/RTL8821CU_driver_v5.2.15.3
 ```
