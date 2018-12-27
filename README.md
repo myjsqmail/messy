@@ -115,3 +115,8 @@ RTL8811AU & RTL8821AU Official Release
 ```
 https://github.com/JackGrinningCat/rtl8821AU_WiFi_linux_v5.2.6.2_23547.20170814_COEX20170206-6760-
 ```
+
+RTL8821AU
+```
+https://github.com/aircrack-ng/rtl8812au.git
+```
