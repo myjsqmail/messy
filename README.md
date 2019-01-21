@@ -104,3 +104,13 @@ RTL8811AU & RTL8821AU Official Release
 Checkout Branch v5.3.4
 https://github.com/aircrack-ng/rtl8812au.git
 ```
+
+System Information Node.JS
+```
+https://github.com/sebhildebrandt/systeminformation
+```
+
+System Information Python
+```
+https://github.com/AntiPhotonltd/sysinfo
+```
