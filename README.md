@@ -122,3 +122,8 @@ tv dl
 http://www.jooview.com/
 http://www.avermedia.cn
 ```
+
+web
+```
+https://github.com/Beipy/VipVideoResolution
+```
