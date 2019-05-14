@@ -95,9 +95,9 @@ config 配置时添加 no-async
 
 RTL8811CU & RTL8821CU_driver_v5.4.1
 ```
+https://github.com/El-SiD/rtl8821CU
 https://github.com/xfor19120101/rtl8821cu-5.4.1-kernel-5.0
 https://github.com/axiomware/RTL8821CU_driver_v5.4.1
-https://github.com/axiomware/RTL8821CU_driver_v5.2.15.3
 ```
 
 RTL8811AU & RTL8821AU Official Release
